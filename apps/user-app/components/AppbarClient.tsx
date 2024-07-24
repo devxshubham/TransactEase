@@ -1,9 +1,9 @@
 "use client"
 import { useRouter } from "next/navigation";
-import { Appbar } from "@repo/ui/appbar";
+import { Appbar } from "@repo/ui/Appbar";
 import { signIn, signOut, useSession } from "next-auth/react"
 
-export function Appbarclient (){
+export function AppbarClient (){
     const router = useRouter()
     const session = useSession();
     return <div>
