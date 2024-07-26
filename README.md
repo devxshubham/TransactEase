@@ -1,81 +1,182 @@
-# Turborepo starter
+<h1 align="center">Basic Wallet App</h1>
 
-This is an official starter Turborepo.
+<p align="center">
+  A MERN project using Tailwind-CSS for practicing the tech-stack.
+</p>
 
-## Using this example
+<p align=center>
+  <img width = "700px" alt="Jio Network blocking the view? Network switch reveals the magic!" src="./assets/tech-stack.png">
+<p>
 
-Run the following command:
+<div align= "center">
 
-```sh
-npx create-turbo@latest
-```
+[![Twitter Badge](https://img.shields.io/badge/-@KadlagAkash-1ca0f1?style=flat&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/KadlagAkash)](https://twitter.com/KadlagAkash) &nbsp; [![Linkedin Badge](https://img.shields.io/badge/-KadlagAkash-0e76a8?style=flat&labelColor=0e76a8&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kadlagakash/) &nbsp; [![Mail Badge](https://img.shields.io/badge/-akashkadlag14-c0392b?style=flat&labelColor=c0392b&logo=gmail&logoColor=white)](mailto:akashkadlag14@gmail.com) &nbsp; [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)&nbsp; [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-## What's inside?
+</div>
 
-This Turborepo includes the following packages/apps:
+<h2 align="center">
 
-### Apps and Packages
+[🗂️&nbsp; Frontend](./client/README.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Backend &nbsp;📂](./server/README.md)
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+</h2>
+<br>
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+<p align="center">
+  <a href="#introduction"><strong>Introduction</strong></a> 
+	·&nbsp;<a href="#features"><strong>Features</strong></a> 
+	·&nbsp;<a href="#tech-stack"><strong>Tech Stack</strong></a>
+	·&nbsp;<a href="#local-development"><strong>Development Setup</strong></a> 
+</p>
+<br>
 
-### Utilities
+## <a name="introduction">❄️&nbsp; Introduction</a>
 
-This Turborepo has some additional tools already setup for you:
+Wallet App created during Week-8 of 100xDevs Cohort by Harkirat Singh.
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+<p align=center>
+	<img width = "650px" alt="Jio Network blocking the view? Network switch reveals the magic!" src="./assets/wallet-app.png">
+<p>
+<br>
 
-### Build
+## <a name="features">🔋&nbsp; Features</a>
 
-To build all apps and packages, run the following command:
+- **Organized File and Folder Structure**: Maintain a well-organized file and folder structure for easy navigation and management.
 
-```
-cd my-turborepo
-pnpm build
-```
+- **Intuitive UI**: Well-organized and intuitive user interface design for a smooth user experience.
 
-### Develop
+- **Server Side State Management**: Leveraged React Query for efficient data fetching and caching.
 
-To develop all apps and packages, run the following command:
+- **Client Side States Management**: Recoil for managing global state at client side.
 
-```
-cd my-turborepo
-pnpm dev
-```
+- **Custom Hooks**: Efficient data management with a custom hooks.
 
-### Remote Caching
+- **Schema Validation**: Enforced schema validation on both frontend and backend for enhanced data integrity using zod.
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+- **Secure Authentication**: Robust authentication using JWT tokens.
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+- **Security Measures**: Implemented rate limiting and refereshing tokens.
 
-```
-cd my-turborepo
-npx turbo login
-```
+- **Documentation**: For clarity & a local development setup guide.
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+- **Fully Responsive Design**: Utilize Tailwind CSS utilities for great UX across different screen sizes.
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+- **Dark and Light Mode**: Seamlessly switch between dark and light themes for personalized visual preferences.
+  <br><br>
 
-```
-npx turbo link
-```
+## <a name="tech-stack">⚙️&nbsp; Tech Stack</a>
 
-## Useful Links
+- [MongoDB](https://www.mongodb.com/) – NoSQL database
+- [Express](https://expressjs.com/) – Web application framework
+- [React](https://react.dev/) – library for building UI
+- [Node.js](https://nodejs.org/) – JavaScript runtime
+- [Tailwind CSS](https://tailwindcss.com/) – utility-first CSS framework
+- [Recoil](https://recoiljs.org/) – library for state management
+- [Tanstack Query](https://tanstack.com/query/latest) – library for asynchronous state management
+- [Mongoose](https://mongoosejs.com/) – MongoDB object modeling
+- [RESTful API](https://restfulapi.net/) – API design principles
+- [Git](https://git-scm.com/) – versioning
+- [Vite](https://vitejs.dev/) – building
+  <br><br>
 
-Learn more about the power of Turborepo:
+## <a name="local-development"> 🖥️&nbsp;&nbsp; Local Development</a>
 
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+0.  **Prerequisites** <br>
+    Make sure you have the following installed on your machine:
+
+    - [Git](https://git-scm.com/)
+    - [Node.js](https://nodejs.org/en)
+    - [npm](https://www.npmjs.com/) (Node Package Manager)
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/devxshubham/TransactEase.git
+    ```
+
+2.  **Setup Backend:**
+
+    - **Navigate to the Backend Codebase:**
+
+      ```bash
+      cd server/
+      ```
+
+    - **Install dependencies:**
+
+      ```bash
+      npm install
+      ```
+
+    - **Add Environment Variables:**
+
+      Create .env file in the root folder and copy paste the content of .env.sample.
+
+      ```bash
+      cp .env.sample .env
+      ```
+
+      If required, add necessary credentials.
+
+    - **Start the Server:**
+
+      ```bash
+      npm start
+      ```
+
+    - **Explore the API:**
+
+      Access the project APIs at the specified endpoints using [API Docs](https://documenter.getpostman.com/view/31850881/2sA3Bn7srM).
+
+4.  **Setup Frontend:**
+
+    - **Navigate to the Frontent Codebase:**
+
+      ```bash
+      cd client/
+      ```
+
+    - **Install dependencies:**
+
+      ```bash
+      npm install
+      ```
+
+    - **Add Environment Variables:**
+
+      Create .env file in the root folder and copy paste the content of .env.sample.
+
+      ```bash
+      cp .env.sample .env
+      ```
+
+      If required, add necessary credentials.
+
+    - **Start the frontend app:**
+
+      ```bash
+      npm run dev
+      ```
+
+    - **Start the backend server:**
+
+      ```bash
+      cd ../server
+      npm start
+      ```
+
+    - **Open app in browser:**
+
+      Visit [https://localhost:5173](https://localhost:5173) to access frontent.
+
+<br>
+
+## 🤝&nbsp;&nbsp;Contributing
+
+Contributions are always welcome!
+
+See [CONTRIBUTING.md](../../../CONTRIBUTING.md) for ways to get started.
+</br></br>
+
+## 🪪&nbsp;&nbsp; Licensing Information
+
+- It is licensed under the [MIT License](./LICENSE). Feel free to learn, add upon, and share!
